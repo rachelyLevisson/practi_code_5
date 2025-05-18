@@ -7,10 +7,8 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// קרא את ה-token מהקונפיגורציה
 var token = builder.Configuration["TOKEN_GITHUB"];
 
-// הוסף את השירותים לקונטיינר
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddScoped<IGitHubService>(provider => new GitHubService(token));
@@ -24,7 +22,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("MyPolicy", builder =>
     {
-        builder.AllowAnyOrigin() // מאפשר לכל המקורות
+        builder.AllowAnyOrigin()
                .AllowAnyHeader()
                .AllowAnyMethod();
     });
@@ -33,15 +31,12 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-// הוסף את השורה הזו כדי להשתמש במדיניות CORS
 app.UseCors("MyPolicy");
 
 app.UseHttpsRedirection();

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ctVh3OLyhoE=",
+  "dgSpecHash": "6S2VaEsiemQ=",
   "success": true,
-  "projectFilePath": "D:\\פרקטיקוד 5\\Service\\Service\\Service.csproj",
+  "projectFilePath": "D:\\פרקטיקוד_5\\Service\\Service\\Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\לויסון\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.4\\microsoft.extensions.configuration.9.0.4.nupkg.sha512",
     "C:\\Users\\לויסון\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.4\\microsoft.extensions.configuration.abstractions.9.0.4.nupkg.sha512",

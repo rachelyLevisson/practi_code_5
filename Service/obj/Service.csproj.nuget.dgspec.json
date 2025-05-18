@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\פרקטיקוד 5\\Service\\Service\\Service.csproj": {}
+    "D:\\פרקטיקוד_5\\Service\\Service\\Service.csproj": {}
   },
   "projects": {
-    "D:\\פרקטיקוד 5\\Service\\Service\\Service.csproj": {
+    "D:\\פרקטיקוד_5\\Service\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\פרקטיקוד 5\\Service\\Service\\Service.csproj",
+        "projectUniqueName": "D:\\פרקטיקוד_5\\Service\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "D:\\פרקטיקוד 5\\Service\\Service\\Service.csproj",
+        "projectPath": "D:\\פרקטיקוד_5\\Service\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\לויסון\\.nuget\\packages\\",
-        "outputPath": "D:\\פרקטיקוד 5\\Service\\Service\\obj\\",
+        "outputPath": "D:\\פרקטיקוד_5\\Service\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

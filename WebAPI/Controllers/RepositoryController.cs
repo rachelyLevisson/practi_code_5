@@ -2,9 +2,6 @@
 using Service;
 using WebAPI.Entity;
 
-//[ApiController]
-//[Route("api/[controller]")]
-
 [Route("api/[controller]")]
 [ApiController]
 public class RepositoryController : ControllerBase
@@ -15,8 +12,6 @@ public class RepositoryController : ControllerBase
     {
         _gitHubService = gitHubService;
     }
-
-    //}
     [HttpGet("repositories")]
     public async Task<ActionResult<List<RepositoryEntity>>> GetRepositories()
     {
@@ -27,7 +22,7 @@ public class RepositoryController : ControllerBase
             return NotFound("No repositories found for this user.");
         }
 
-        return Ok(repositories); // מחזיר את הרשימה בפורמט JSON
+        return Ok(repositories);
     }
 
 
